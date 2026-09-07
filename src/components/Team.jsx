@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import teamMembers from "../data/teamData";
 
 function Team() {
@@ -12,9 +13,9 @@ function Team() {
             <h3>{member.name}</h3>
             <p>{member.role}</p>
 
-            <a href={member.portfolio} target="_blank" rel="noreferrer">
-              View Portfolio →
-            </a>
+           <Link to={member.portfolio}>
+  View Portfolio →
+</Link>
           </div>
         ))}
       </div>

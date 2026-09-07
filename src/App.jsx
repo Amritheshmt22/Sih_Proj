@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Problem from "./components/Problem";
@@ -9,8 +11,9 @@ import Team from "./components/Team";
 import Technologies from "./components/Technologies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Portfolio from "./components/Portfolio";
 
-function App() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -25,6 +28,17 @@ function App() {
       <Contact />
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter basename="/Sih_Proj">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio/:person" element={<Portfolio />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
