@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --bg: #f8fafc;
   --surface: #ffffff;
@@ -61,29 +64,28 @@ nav {
   top: 0;
   z-index: 1000;
 
-  min-height: 70px;
-  padding: 14px 6%;
-
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  gap: 28px;
 
-  background: rgba(255, 255, 255, 0.94);
+  padding: 16px 40px;
+
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(12px);
 
   border-bottom: 1px solid var(--border);
 }
 
 nav a {
-  padding: 9px 12px;
-
   color: var(--text);
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
+}
 
-  border-radius: 8px;
-
-  transition: 0.25s ease;
+nav a:hover {
+  color: var(--primary);
 }
 
 nav a:first-child {
@@ -208,7 +210,7 @@ nav a:hover {
 ========================= */
 
 .content-section {
-  padding: 110px 6%;
+  padding: 90px 8%;
 
   border-top: 1px solid var(--border);
   background: var(--surface);
@@ -603,4 +605,12 @@ footer p {
   #contact {
     padding: 75px 20px;
   }
+}
+
+.section-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
 }
