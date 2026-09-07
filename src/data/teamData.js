@@ -3,7 +3,7 @@ import sumiPic from "../images/team/sumi.jpg";
 import benPic from "../images/team/ben.jpg";
 import chuPic from "../images/team/chu.jpg";
 import mahiPic from "../images/team/mahi.jpg";
-import mtPic from "../images/team/mt.jpg";
+import mtPic from "../images/team/mtPic.jpg";
 const teamMembers = [
   {
     name: "Abhilasha Singh",
